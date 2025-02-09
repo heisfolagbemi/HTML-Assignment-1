@@ -1,0 +1,89 @@
+.body-container{
+    display: flex;
+    background: white;
+    flex-direction: row;
+}
+.left, .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 32px;
+}
+.inner-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 48px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    text-align: center;
+}
+.nav-bar{
+    top: 20px;
+    right: 40px;
+    position: absolute;
+}
+.nav-text{
+    font-weight: 600;
+}
+.link{
+    cursor: pointer;
+    text-decoration: none;
+    color: #0367F2;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.signiee{
+    font-size: 36px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+.apply{
+    font-weight: 500;
+    margin-top: 8px;
+    color: #718096;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    
+}
+@media screen and (max-width: 1024px){
+    .body-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-bar{
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .ledt, .right{
+        padding: 20px;
+    }
+    .form{
+        width: 90%;
+    }
+}
