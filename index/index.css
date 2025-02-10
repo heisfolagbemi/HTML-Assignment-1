@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+}
+
+button a{
+    background: #0367F2;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+button:hover{
+    background: #024ab3;
+}
+#profile-header {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+.profile-pic{
+    border-radius: 50%;
+    border: 4px solid #0367F2;
+    margin-bottom: 10px;
+}
+.info-title{
+    color: brown;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.about-me, .goal{
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+.about-me h2, .goal h2{
+    color: #0367F2;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.scroll-top{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background: #0367F2;
+    border-radius: 10px;
+}
+.scroll-top a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px) {
+    .about-me, .goal #profile-header{
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    button{
+        width: 100%;
+    }
+    .profile-pic{
+        width: 200px;
+        height: 200px;
+    }
+}
+
